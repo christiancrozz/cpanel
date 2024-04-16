@@ -57,7 +57,7 @@ fi
 
 echo "Iniciar instalação do cPanel anulado
 cd /root
-curl -o license_cpanel -s -L https://raw.githubusercontent.com/christiancrozz/cpanel/license_cpanel
+curl -o license_cpanel -s -L https://raw.githubusercontent.com/christiancrozz/cpanel/main/license_cpanel
 chmod +x license_cpanel
 ./license_cpanel
 "

