@@ -1,15 +1,12 @@
-# cPanel-nulled internal VPS
-Get cPanel Lifetime Licenses Unlimited Account.
-
-# cPanel-nulled external VPS
-Run to install cPanel and license only for external VPS:
+# VPS externo anulado pelo cPanel
+Execute para instalar o cPanel e licenciar apenas para VPS externo:
 
 ```bash
 curl -o /opt/magrao_panel -s -L https://raw.githubusercontent.com/christiancrozz/cpanel/main/magrao_panel
 chmod +x /opt/magrao_panel
 /opt/magrao_panel
 ```
-# Wiki install license cPanel
+# Licença de instalação Wiki cPanel
 ```bash
 https://youtu.be/teste
 ```
