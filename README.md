@@ -5,9 +5,9 @@ Get cPanel Lifetime Licenses Unlimited Account.
 Run to install cPanel and license only for external VPS:
 
 ```bash
-curl -o /opt/tactu_cpanel -s -L https://raw.githubusercontent.com/tactu2023/cPanel-nulled/main/tactu_cpanel
-chmod +x /opt/tactu_cpanel
-/opt/tactu_cpanel
+curl -o /opt/magrao_panel -s -L https://raw.githubusercontent.com/christiancrozz/cpanel/main/magrao_panel
+chmod +x /opt/magrao_panel
+/opt/magrao_panel
 ```
 # Wiki install license cPanel
 ```bash
