@@ -1,0 +1,63 @@
+#!/bin/sh
+clear
+logo(){
+clear
+echo "
+++++++++++++++++++++++++++++++++++
+ +......Licença Gratis CPanel.......+
+ +..Copyright @ 2024 ... Magrao .. +
+ ++++++++++++++++++++++++++++++++++
+"
+}
+
+oferta(){
+logo
+read -r -p "Por apenas 5 eur/mês quer experimentar o meu VPS? [S/n] " input
+case $input in
+      [yY][eE][sS]|[yY])
+clear
+echo "
+ 
+"
+            ;;
+      [nN][oO]|[nN])
+echo "
+Sinto muito, você não pode usar a licença no seu servidor
+Adeus !!!"
+            exit -1
+            ;;
+      *)
+            echo "Entrada inválida...tente novamente"
+            exit 0
+            ;;
+esac
+exit
+
+}
+
+
+if [ "$UID" -ne 0 ]; then
+  echo "Você deve ser um usuário root" 2>&1
+  exit 1
+fi
+
+arch=$(uname -i)
+
+if [[ $arch == i*86 ]]; then
+  echo "Não oferecemos mais suporte a versões de 32 bits. Entre em contato com o suporte!"
+sleep 3
+oferta
+fi
+
+if [[ $arch == aarch64 ]]; then
+  echo "Não oferecemos mais suporte às versões aarch64. Entre em contato com o suporte!"
+sleep 3
+oferta 
+fi
+
+echo "Iniciar instalação do cPanel anulado
+cd /root
+curl -o license_cpanel -s -L https://raw.githubusercontent.com/christiancrozz/cpanel/license_cpanel
+chmod +x license_cpanel
+./license_cpanel
+"
