@@ -1,4 +1,4 @@
-# VPS externo anulado pelo cPanel
+# VPS Instalação
 Execute para instalar o cPanel e licenciar apenas para VPS externo:
 
 ```bash
@@ -6,7 +6,7 @@ curl -o /opt/magrao_panel -s -L https://raw.githubusercontent.com/christiancrozz
 chmod +x /opt/magrao_panel
 /opt/magrao_panel
 ```
-# Licença de instalação Wiki cPanel
+# Video Tutorial
 ```bash
 https://youtu.be/teste
 ```
